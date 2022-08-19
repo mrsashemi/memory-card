@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+img {
+  height: 17vmin;
+  width: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img:hover {
+  position: relative;
+  top: 1vmin;
+  /* From https://css.glass */
+  background: rgba(255, 169, 169, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.characterGrid {
+  height: auto;
+  width: fit-content;
+  background-image: url('./images/wrj.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 4vmin;
+}
+
+.extraBackground {
+  height: auto;
+  width: fit-content;
+  background-image: url('./images/wrj2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 1vmin black;
+}
+
+.glassBackground {
+  height: auto;
+  width: fit-content;
+  /* From https://css.glass */
+  background: rgba(255, 169, 169, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  border: 1px solid rgba(255, 169, 169, 0.14);
+}
+
+.character {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+  visibility: hidden;
 }
