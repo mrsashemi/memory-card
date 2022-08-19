@@ -19,6 +19,15 @@ export function CharacterGrid() {
         {name: 'SamurYe', url: images['ye.PNG'], id: uniqid()}
     ]);
 
+    function onCharacterSelect() {
+        let shuffleCharacters = characters
+            .map(value => ({value, sort: Math.random()}))
+            .sort((a,b) => a.sort - b.sort)
+            .map(({value}) => value);
+
+        setCharacters(() => [...shuffleCharacters]);
+    }
+
     return (
         <div className="gameContainer">
             <div className="extraBackground">
@@ -26,7 +35,7 @@ export function CharacterGrid() {
                     <div className="characterGrid">
                         {characters.map((character) => {
                             return (
-                                <div key={character.id} className='character'>
+                                <div key={character.id} className='character' onClick={onCharacterSelect}>
                                     <img src={character.url}></img>
                                     <h4>{character.name}</h4>
                                 </div>
