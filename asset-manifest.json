@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.9cdce292.css",
+    "main.js": "/memory-card/static/js/main.17515c86.js",
+    "static/js/787.d6a8b40f.chunk.js": "/memory-card/static/js/787.d6a8b40f.chunk.js",
+    "static/media/wrj.png": "/memory-card/static/media/wrj.5a1b6f9cf39ec410d2d5.png",
+    "static/media/wrj2.png": "/memory-card/static/media/wrj2.1a591df95b0e923daad8.png",
+    "static/media/internetwars.jpg": "/memory-card/static/media/internetwars.f4a429eede3ac0127553.jpg",
+    "static/media/murakami.PNG": "/memory-card/static/media/murakami.0f8835772b8e563baef9.PNG",
+    "static/media/uzi.PNG": "/memory-card/static/media/uzi.67603948726bd184d8c4.PNG",
+    "static/media/pharrell.PNG": "/memory-card/static/media/pharrell.630fdea9a6cec7b484ac.PNG",
+    "static/media/riri.PNG": "/memory-card/static/media/riri.1b45e1bc81a946911734.PNG",
+    "static/media/cudi.PNG": "/memory-card/static/media/cudi.af240c1b8d20a8e1e3b8.PNG",
+    "static/media/ye.PNG": "/memory-card/static/media/ye.c8ecbb1053377acb7b50.PNG",
+    "static/media/minoru.PNG": "/memory-card/static/media/minoru.7b4ca3025a06650cbcba.PNG",
+    "static/media/frank.PNG": "/memory-card/static/media/frank.2ec4df3c38b3ff1366eb.PNG",
+    "static/media/madsaki.PNG": "/memory-card/static/media/madsaki.cadb7d880e41f19cd24f.PNG",
+    "static/media/meek.PNG": "/memory-card/static/media/meek.b401e216b0eb1a73d10f.PNG",
+    "static/media/beyonce.PNG": "/memory-card/static/media/beyonce.ebf5d3f7bcbdea4022eb.PNG",
+    "static/media/abe.PNG": "/memory-card/static/media/abe.8092a010b2a721f4a1d4.PNG",
+    "static/media/VT323-Regular.ttf": "/memory-card/static/media/VT323-Regular.2bc43ad8eb2f60b39f27.ttf",
+    "index.html": "/memory-card/index.html",
+    "main.9cdce292.css.map": "/memory-card/static/css/main.9cdce292.css.map",
+    "main.17515c86.js.map": "/memory-card/static/js/main.17515c86.js.map",
+    "787.d6a8b40f.chunk.js.map": "/memory-card/static/js/787.d6a8b40f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cdce292.css",
+    "static/js/main.17515c86.js"
+  ]
+}
