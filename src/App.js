@@ -6,11 +6,10 @@ function App() {
 
   return (
     <div className='container'>
-      <h1>Wizards Robbing Kids Memory Game</h1>
-      <h3>Don't click on the same character more than once!</h3>
-      <CharacterGrid />
-      <div className='characterGrid'>
+      <div className='titleContainer'>
+      <h1>Don't click on the same character more than once!</h1>
       </div>
+      <CharacterGrid />
     </div>
   )
 }

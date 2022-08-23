@@ -1,11 +1,62 @@
-img {
-  height: 17vmin;
+@font-face {
+  font-family: '8bit';
+  src: url('fonts/VT323-Regular.ttf')
+}
+
+body {
+  background-image: url('images/internetwars.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  /* From https://css.glass */
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background: rgba(232, 226, 226, 0.75);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: '8bit', 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow:
+  -1px -1px 0 red,  
+  1px -1px 0 red,
+  -1px 1px 0 red,
+  1px 1px 0 red;
+}
+
+.titleContainer > h1 {
+  font-size: 3vmin;
+  margin: 0;
+  padding: 0;
+}
+
+.characterImg {
+  height: 13vmin;
+  margin: 0 5vmin 0.5vmin 5vmin;
   width: auto;
 }
 
-img:hover {
+.characterImg:hover {
   position: relative;
   top: 1vmin;
+  cursor: pointer;
   /* From https://css.glass */
   background: rgba(255, 169, 169, 0.24);
   border-radius: 16px;
@@ -16,35 +67,45 @@ img:hover {
 }
 
 .gameContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 45vw;
+  height: 95vh;
+  min-width: fit-content;
+  min-height: fit-content;
+  box-shadow: 
+  1vmin 1vmin 1vmin rgba(0, 0, 0, 0.75),
+  -1vmin 1vmin 1vmin rgba(0, 0, 0, 0.75);
 }
 
 .characterGrid {
-  height: auto;
-  width: fit-content;
+  width: 45vw;
+  height: 95vh;
+  min-width: fit-content;
+  min-height: fit-content;
   background-image: url('./images/wrj.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 0.5fr repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  padding-top: 4vmin;
 }
 
 .extraBackground {
-  height: auto;
-  width: fit-content;
+  width: 45vw;
+  height: 95vh;
+  min-width: fit-content;
+  min-height: fit-content;
   background-image: url('./images/wrj2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  border: solid 1vmin black;
+  border: solid 0.5vmin black;
 }
 
 .glassBackground {
-  height: auto;
-  width: fit-content;
+  width: 45vw;
+  height: 95vh;
+  min-width: fit-content;
+  min-height: fit-content;
   /* From https://css.glass */
   background: rgba(255, 169, 169, 0.24);
   border-radius: 16px;
@@ -60,6 +121,52 @@ img:hover {
   align-items: center;
 }
 
-h4 {
-  visibility: hidden;
+.scoreContainer {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  grid-row: 1;
+  grid-column: 1/4;
 }
+
+.scoreContainer > h4 {
+  font-family: '8bit', 'Courier New', Courier, monospace;
+  font-size: 2.5vmin;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow:
+  -1px -1px 0 red,  
+  1px -1px 0 red,
+  -1px 1px 0 red,
+  1px 1px 0 red;
+}
+
+.hidden {
+  visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  font-size: 2vmin;
+  font-family: '8bit', 'Courier New', Courier, monospace;
+  color: white;
+  text-shadow:
+  -1px -1px 0 red,  
+  1px -1px 0 red,
+  -1px 1px 0 red,
+  1px 1px 0 red;
+}
+
+.shown {
+  font-size: 2vmin;
+  position: relative;
+  cursor: pointer;
+  font-family: '8bit', 'Courier New', Courier, monospace;
+  color: white;
+  text-shadow:
+  -1px -1px 0 red,  
+  1px -1px 0 red,
+  -1px 1px 0 red,
+  1px 1px 0 red;
+}
+
